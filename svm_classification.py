@@ -110,7 +110,7 @@ for idx, (name, res) in enumerate(results.items()):
 
 plt.tight_layout(rect=[0, 0, 1, 0.95])
 plt.savefig('svm_confusion_matrices.png', dpi=150, bbox_inches='tight')
-print("\n✅ Saved: svm_confusion_matrices.png")
+print("\nSaved: outputs/svm_confusion_matrices.png")
 
 # --- ROC Curves ---
 plt.figure(figsize=(10, 8))
@@ -128,7 +128,7 @@ plt.legend(fontsize=11)
 plt.grid(alpha=0.3)
 plt.tight_layout()
 plt.savefig('svm_roc_curves.png', dpi=150, bbox_inches='tight')
-print("✅ Saved: svm_roc_curves.png")
+print("Saved: outputs/svm_roc_curves.png")
 
 # --- Accuracy Comparison Bar Chart ---
 plt.figure(figsize=(8, 5))
@@ -145,7 +145,7 @@ plt.title('SVM Kernel Accuracy Comparison', fontsize=14, fontweight='bold')
 plt.grid(axis='y', alpha=0.3)
 plt.tight_layout()
 plt.savefig('svm_accuracy_comparison.png', dpi=150, bbox_inches='tight')
-print("✅ Saved: svm_accuracy_comparison.png")
+print("Saved: outputs/svm_accuracy_comparison.png")
 
 # --- Feature Importance (Linear Kernel Coefficients) ---
 linear_model = results['Linear']['model']
@@ -161,8 +161,6 @@ plt.title('Top 15 Feature Importances (Linear SVM)', fontsize=14, fontweight='bo
 plt.grid(axis='x', alpha=0.3)
 plt.tight_layout()
 plt.savefig('svm_feature_importance.png', dpi=150, bbox_inches='tight')
-print("✅ Saved: svm_feature_importance.png")
+print("Saved: outputs/svm_feature_importance.png")
 
-print("\n" + "=" * 60)
-print("  ALL DONE ✅")
-print("=" * 60)
+print("ALL GRAPHS PRESENT IN /OUTPUTS")

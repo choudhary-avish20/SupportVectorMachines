@@ -9,7 +9,7 @@ The goal is not to build a production-grade model, but to explore:
 
 ## Dataset
 
-The project uses the Wisconsin Breast Cancer dataset stored in [data.csv](data.csv).
+The project uses the Wisconsin Breast Cancer dataset (https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)
 
 - Total samples: **569**
 - Number of features: **30**
